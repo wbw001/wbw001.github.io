@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./sdk.js"></script>
+    <script src="./clipboard.min.js"></script>
+    <title>获取 init Data</title>
+  </head>
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <h1>获取 TAPP init Data</h1>
+    <div id="init_data"></div>
+
+    <button id="btn" data-clipboard-target="#init_data">复制</button>
+
+    <script>
+      console.log(window.Telegram.WebApp, "=-WebApp");
+      const WebApp = window.Telegram.WebApp;
+
+      document.getElementById("init_data").innerHTML = WebApp.initData;
+
+      new ClipboardJS("#btn");
+    </script>
   </body>
 </html>
