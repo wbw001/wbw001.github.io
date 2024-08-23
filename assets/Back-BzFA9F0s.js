@@ -1,0 +1,1 @@
+import{u as a,j as s}from"./index-CyAfKOV5.js";const i=({title:t})=>{const e=a();return s.jsxs("div",{onClick:()=>e(-1),className:" flex justify-start items-center cursor-pointer",children:[s.jsx("img",{src:"/images/arrow-left.png",alt:""}),s.jsx("div",{className:" capitalize text-[19px] font-semibold",children:t})]})},c=i;export{c as B};
